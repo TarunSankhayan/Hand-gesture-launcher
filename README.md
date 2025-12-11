@@ -47,19 +47,22 @@ The script uses MediaPipe Hands to analyze the hand's geometry in real-time.
 🔧 Configuration Parameters
 Fine-tune the gesture sensitivity by adjusting these constants in hand_gesture_launcher.py:
 
-Parameter                               Default              Description
+Parameter       -                    Default     -         Description
 
-TRACK_LANDMARK_IDX                      9                   The specific landmark index used for tracking motion (center of palm).
+TRACK_LANDMARK_IDX       -               9     -              The specific landmark index used for tracking motion (center of palm).
 
-SMOOTHING_POS                           0.6                 Factor for smoothing the tracked position to reduce noise.
+SMOOTHING_POS                        -   0.6     -            Factor for smoothing the tracked position to reduce noise.
 
-SWIPE_DISPLACEMENT                      80                  Minimum pixel distance for a motion to qualify as a swipe.
+SWIPE_DISPLACEMENT                  -    80   -               Minimum pixel distance for a motion to qualify as a swipe.
 
-PUSH_AREA_RATIO                         1.12                Required ratio for hand area change to trigger a push/pull gesture.
+PUSH_AREA_RATIO                -         1.12     -           Required ratio for hand area change to trigger a push/pull gesture.
 
-GESTURE_COOLDOWN_FRAMES                 12                  Frames to wait after an action is fired to prevent rapid, accidental re- triggering.
+GESTURE_COOLDOWN_FRAMES               -  12         -         Frames to wait after an action is fired to prevent rapid, accidental re- triggering.
 
-📄 LicenseThis project is licensed under the MIT License.See the LICENSE file for full details.
+
+📄 License
+This project is licensed under the MIT License.See the LICENSE file for full details.
+
 
 🙏 Acknowledgements
 OpenCV
