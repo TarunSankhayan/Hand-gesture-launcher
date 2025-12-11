@@ -18,29 +18,34 @@ Bashpip install opencv-python mediapipe numpy
 
    EXAMPLE ACTION_MAP Customization:
 
-   *Example: Opens a URL in the default browser
+   ****Example: Opens a URL in the default browser
    
    "swipe_right": - {"type": "url", "payload": "https://www.google.com"}, 
 
  
-   *Example: Opens the user's home directory (payload=None opens default home path)
+   ****Example: Opens the user's home directory (payload=None opens default home path)
    
    "push": - {"type": "folder", "payload": None}, 
 
 
-   *Example: Runs a command (e.g., opens a calculator on Windows)
+   ****Example: Runs a command (e.g., opens a calculator on Windows)
    
    "swipe_up": - {"type": "cmd", "payload": ["calc.exe"]}, 
 
  
-   *Example: Opens a specific file path
+   ****Example: Opens a specific file path
    
    "pull": - {"type": "file", "payload": "C:\\Users\\Public\\Desktop\\MyDoc.pdf"},
    } 
 
   
 3. Run the ScriptExecute the script from your terminal:
-         Bashpython hand_gesture_launcher.py
+
+
+
+      Bashpython hand_gesture_launcher.py
+
+   
 A window titled "Gesture Launcher" will appear, showing your camera feed and the tracking interface.
 ---------------------------------------------------------------------------------------------------------------------------------------
 📐 Technical Detection
