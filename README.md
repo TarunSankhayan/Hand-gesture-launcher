@@ -10,8 +10,8 @@ Cross-Platform Compatibility: Actions are seamlessly executed on Windows, macOS,
 
 You will need Python and the following dependencies:
 
+   .           opencv-python mediapipe numpy
 
-Bashpip install opencv-python mediapipe numpy
 
 
 🚀 Getting Started1. 
@@ -47,7 +47,7 @@ Bashpip install opencv-python mediapipe numpy
 
       Bashpython hand_gesture_launcher.py
 
-A window titled "Gesture Launcher" will appear, showing your camera feed and the tracking interface.
+   A window titled "Gesture Launcher" will appear, showing your camera feed and the tracking interface.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
