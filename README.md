@@ -9,7 +9,10 @@ Customizable Action Mapping: Easily define actions (URL, folder, command, shell)
 Cross-Platform Compatibility: Actions are seamlessly executed on Windows, macOS, and Linux.Visual HUD: Provides instant feedback on hand direction, detected gesture, and operational status.🛠️ RequirementsThe project relies on computer vision and tracking libraries.
 
 You will need Python and the following dependencies:
+
+
 Bashpip install opencv-python mediapipe numpy
+
 
 🚀 Getting Started1. 
 
@@ -42,10 +45,11 @@ Bashpip install opencv-python mediapipe numpy
 3. Run the ScriptExecute the script from your terminal:
 
 
-
       Bashpython hand_gesture_launcher.py
 
 A window titled "Gesture Launcher" will appear, showing your camera feed and the tracking interface.
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 📐 Technical Detection
 The script uses MediaPipe Hands to analyze the hand's geometry in real-time.
