@@ -15,24 +15,26 @@ Bashpip install opencv-python mediapipe numpy
 
 1. Configure Actions Open the hand_gesture_launcher.py file and modify the ACTION_MAP dictionary (around line 30) to map your desired gestures to actions.
 [[[[⚠️ Security Warning: Use caution when configuring cmd or shell actions. The script will execute any command defined here.]]]]
-Example ACTION_MAP Customization:PythonACTION_MAP = {
-   Opens a URL in the default browser
-   "swipe_right": {"type": "url", "payload": "https://www.google.com"}, 
+
+   EXAMPLE ACTION_MAP Customization:
+
+   Example: Opens a URL in the default browser
+   "swipe_right": - {"type": "url", "payload": "https://www.google.com"}, 
     
    Example: Opens the user's home directory (payload=None opens default home path)
-   "push":        {"type": "folder", "payload": None}, 
+   "push": - {"type": "folder", "payload": None}, 
     
    Example: Runs a command (e.g., opens a calculator on Windows)
-   "swipe_up":    {"type": "cmd", "payload": ["calc.exe"]}, 
+   "swipe_up": - {"type": "cmd", "payload": ["calc.exe"]}, 
     
    Example: Opens a specific file path
-   "pull":        {"type": "file", "payload": "C:\\Users\\Public\\Desktop\\MyDoc.pdf"},
+   "pull": - {"type": "file", "payload": "C:\\Users\\Public\\Desktop\\MyDoc.pdf"},
    } 
   
-2. Run the ScriptExecute the script from your terminal:
+3. Run the ScriptExecute the script from your terminal:
          Bashpython hand_gesture_launcher.py
 A window titled "Gesture Launcher" will appear, showing your camera feed and the tracking interface.
-
+---------------------------------------------------------------------------------------------------------------------------------------
 📐 Technical Detection
 The script uses MediaPipe Hands to analyze the hand's geometry in real-time.
 
@@ -42,7 +44,8 @@ The script uses MediaPipe Hands to analyze the hand's geometry in real-time.
 
    Push: An area increase of more than PUSH_AREA_RATIO (e.g., 12%) over PUSH_SUSTAIN frames suggests the hand moved closer to the camera.
    Pull: An area decrease of less than 1.0 / PUSH_AREA_RATIO suggests the hand moved further away from the camera.
-
+   
+---------------------------------------------------------------------------------------------------------------------------------------
 
 🔧 Configuration Parameters
 Fine-tune the gesture sensitivity by adjusting these constants in hand_gesture_launcher.py:
@@ -59,11 +62,12 @@ PUSH_AREA_RATIO                -         1.12     -           Required ratio for
 
 GESTURE_COOLDOWN_FRAMES               -  12         -         Frames to wait after an action is fired to prevent rapid, accidental re- triggering.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 📄 License
 This project is licensed under the MIT License.See the LICENSE file for full details.
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 🙏 Acknowledgements
 OpenCV
 MediaPipe Hands
