@@ -65,9 +65,15 @@ GESTURE_COOLDOWN_FRAMES               -  12         -         Frames to wait aft
 --------------------------------------------------------------------------------------------------------------------------------------
 
 📄 License
+
+
 This project is licensed under the MIT License.See the LICENSE file for full details.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 🙏 Acknowledgements
+
+
 OpenCV
+
+
 MediaPipe Hands
