@@ -45,7 +45,6 @@ Bashpip install opencv-python mediapipe numpy
 
       Bashpython hand_gesture_launcher.py
 
-   
 A window titled "Gesture Launcher" will appear, showing your camera feed and the tracking interface.
 ---------------------------------------------------------------------------------------------------------------------------------------
 📐 Technical Detection
