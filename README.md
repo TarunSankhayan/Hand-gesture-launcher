@@ -16,18 +16,18 @@ Bashpip install opencv-python mediapipe numpy
 1. Configure Actions Open the hand_gesture_launcher.py file and modify the ACTION_MAP dictionary (around line 30) to map your desired gestures to actions.
 [[[[⚠️ Security Warning: Use caution when configuring cmd or shell actions. The script will execute any command defined here.]]]]
 Example ACTION_MAP Customization:PythonACTION_MAP = {
-    # Opens a URL in the default browser
-    "swipe_right": {"type": "url", "payload": "https://www.google.com"}, 
+   Opens a URL in the default browser
+   "swipe_right": {"type": "url", "payload": "https://www.google.com"}, 
     
-   # Example: Opens the user's home directory (payload=None opens default home path)
-  "push":        {"type": "folder", "payload": None}, 
+   Example: Opens the user's home directory (payload=None opens default home path)
+   "push":        {"type": "folder", "payload": None}, 
     
-  # Example: Runs a command (e.g., opens a calculator on Windows)
-  "swipe_up":    {"type": "cmd", "payload": ["calc.exe"]}, 
+   Example: Runs a command (e.g., opens a calculator on Windows)
+   "swipe_up":    {"type": "cmd", "payload": ["calc.exe"]}, 
     
-  # Example: Opens a specific file path
-  "pull":        {"type": "file", "payload": "C:\\Users\\Public\\Desktop\\MyDoc.pdf"},
-  } 
+   Example: Opens a specific file path
+   "pull":        {"type": "file", "payload": "C:\\Users\\Public\\Desktop\\MyDoc.pdf"},
+   } 
   
 2. Run the ScriptExecute the script from your terminal:
          Bashpython hand_gesture_launcher.py
@@ -47,17 +47,17 @@ The script uses MediaPipe Hands to analyze the hand's geometry in real-time.
 🔧 Configuration Parameters
 Fine-tune the gesture sensitivity by adjusting these constants in hand_gesture_launcher.py:
 
-Parameter                      Default     Description
+Parameter                               Default              Description
 
-TRACK_LANDMARK_IDX             9           The specific landmark index used for tracking motion (center of palm).
+TRACK_LANDMARK_IDX                      9                   The specific landmark index used for tracking motion (center of palm).
 
-SMOOTHING_POS                  0.6         Factor for smoothing the tracked position to reduce noise.
+SMOOTHING_POS                           0.6                 Factor for smoothing the tracked position to reduce noise.
 
-SWIPE_DISPLACEMENT             80          Minimum pixel distance for a motion to qualify as a swipe.
+SWIPE_DISPLACEMENT                      80                  Minimum pixel distance for a motion to qualify as a swipe.
 
-PUSH_AREA_RATIO                1.12        Required ratio for hand area change to trigger a push/pull gesture.
+PUSH_AREA_RATIO                         1.12                Required ratio for hand area change to trigger a push/pull gesture.
 
-GESTURE_COOLDOWN_FRAMES        12          Frames to wait after an action is fired to prevent rapid, accidental re-triggering.
+GESTURE_COOLDOWN_FRAMES                 12                  Frames to wait after an action is fired to prevent rapid, accidental re- triggering.
 
 📄 LicenseThis project is licensed under the MIT License.See the LICENSE file for full details.
 
