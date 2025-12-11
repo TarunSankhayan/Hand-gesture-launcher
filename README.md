@@ -50,9 +50,13 @@ Fine-tune the gesture sensitivity by adjusting these constants in hand_gesture_l
 Parameter                      Default     Description
 
 TRACK_LANDMARK_IDX             9           The specific landmark index used for tracking motion (center of palm).
+
 SMOOTHING_POS                  0.6         Factor for smoothing the tracked position to reduce noise.
+
 SWIPE_DISPLACEMENT             80          Minimum pixel distance for a motion to qualify as a swipe.
+
 PUSH_AREA_RATIO                1.12        Required ratio for hand area change to trigger a push/pull gesture.
+
 GESTURE_COOLDOWN_FRAMES        12          Frames to wait after an action is fired to prevent rapid, accidental re-triggering.
 
 📄 LicenseThis project is licensed under the MIT License.See the LICENSE file for full details.
